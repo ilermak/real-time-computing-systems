@@ -71,7 +71,7 @@ int main(void)
   
 #if defined MEDIA_IntFLASH
   
-  WavePlayBack(I2S_AudioFreq_8k); 
+  WavePlayBack(I2S_AudioFreq_48k); 
   while (1);
   
 #elif defined MEDIA_USB_KEY

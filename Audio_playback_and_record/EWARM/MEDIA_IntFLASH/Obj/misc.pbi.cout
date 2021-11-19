@@ -1,26 +1,26 @@
-"D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c"
+"C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Libraries\STM32F4xx_StdPeriph_Driver\src\misc.c"
 -std=c99
 -ferror-limit=100
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Libraries\CMSIS\Include
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Libraries\CMSIS\Include
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Libraries\CMSIS\ST\STM32F4xx\Include
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Libraries\CMSIS\ST\STM32F4xx\Include
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Core\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Libraries\STM32_USB_HOST_Library\Core\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Libraries\STM32_USB_HOST_Library\Class\MSC\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Libraries\STM32_USB_OTG_Driver\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Libraries\STM32_USB_OTG_Driver\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Utilities\STM32F4-Discovery
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Utilities\STM32F4-Discovery
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\..\..\..\Utilities\Third_Party\fat_fs\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\..\Utilities\Third_Party\fat_fs\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5_2\arm\CMSIS\Include
 -I
@@ -28,25 +28,25 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5_2\arm\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5_2\arm\inc\c
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\Include
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Libraries\CMSIS\Include
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Libraries\CMSIS\ST\STM32F4xx\Include
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Libraries\CMSIS\ST\STM32F4xx\Include
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32F4xx_StdPeriph_Driver\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Libraries\STM32F4xx_StdPeriph_Driver\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32_USB_HOST_Library\Core\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Libraries\STM32_USB_HOST_Library\Core\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32_USB_HOST_Library\Class\MSC\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Libraries\STM32_USB_HOST_Library\Class\MSC\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Libraries\STM32_USB_OTG_Driver\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Libraries\STM32_USB_OTG_Driver\inc
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Utilities\STM32F4-Discovery
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Utilities\STM32F4-Discovery
 -I
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Utilities\Third_Party\fat_fs\inc
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\Utilities\Third_Party\fat_fs\inc
 -I
 C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5_2\arm\CMSIS\Include
 -DUSE_STDPERIPH_DRIVER=0
@@ -259,8 +259,8 @@ C:\Program Files (x86)\IAR Systems\Embedded Workbench 6.5_2\arm\CMSIS\Include
 -D__HAS_LOCATED_DECLARATION__=1
 -D__HAS_LOCATED_WITH_INIT__=1
 -D__IAR_COMPILERBASE__=593160
--D__DATE__="Oct 26 2021"
--D__TIME__="13:33:05"
+-D__DATE__="Nov 16 2021"
+-D__TIME__="12:13:49"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1

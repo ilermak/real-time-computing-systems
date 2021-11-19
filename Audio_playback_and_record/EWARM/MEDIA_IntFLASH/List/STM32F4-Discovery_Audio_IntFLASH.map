@@ -1,72 +1,77 @@
 ###############################################################################
 #                                                                             #
-# IAR ELF Linker V6.50.3.4676/W32 for ARM               03/Nov/2021  14:48:25 #
+# IAR ELF Linker V6.50.3.4676/W32 for ARM               16/Nov/2021  12:16:21 #
 # Copyright 2007-2013 IAR Systems AB.                                         #
 #                                                                             #
-#    Output file  =  D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Exe\STM32F4-D #
-#                    iscovery_Audio_IntFLASH.out                              #
-#    Map file     =  D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\List\STM32F4- #
-#                    Discovery_Audio_IntFLASH.map                             #
-#    Command line =  D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\audio_sam #
-#                    ple.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Utilit #
-#                    ies\STM32F4-Discovery\libPDMFilter_IAR.a                 #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\main.o    #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\misc.o    #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\startup_s #
-#                    tm32f4xx.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\P #
-#                    roject\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Ob #
-#                    j\stm32f4_discovery.o D:\USR\Ilya\stm\STM32F4-Discovery_ #
-#                    FW_V1.1.0\Project\Audio_playback_and_record\EWARM\MEDIA_ #
-#                    IntFLASH\Obj\stm32f4_discovery_audio_codec.o             #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\stm32f4_d #
-#                    iscovery_lis302dl.o D:\USR\Ilya\stm\STM32F4-Discovery_FW #
-#                    _V1.1.0\Project\Audio_playback_and_record\EWARM\MEDIA_In #
-#                    tFLASH\Obj\stm32f4xx_dac.o D:\USR\Ilya\stm\STM32F4-Disco #
-#                    very_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\M #
-#                    EDIA_IntFLASH\Obj\stm32f4xx_dma.o                        #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\stm32f4xx #
-#                    _exti.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Proj #
-#                    ect\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\s #
-#                    tm32f4xx_gpio.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1. #
-#                    1.0\Project\Audio_playback_and_record\EWARM\MEDIA_IntFLA #
-#                    SH\Obj\stm32f4xx_i2c.o D:\USR\Ilya\stm\STM32F4-Discovery #
-#                    _FW_V1.1.0\Project\Audio_playback_and_record\EWARM\MEDIA #
-#                    _IntFLASH\Obj\stm32f4xx_it.o                             #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\stm32f4xx #
-#                    _pwr.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Proje #
-#                    ct\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
-#                    m32f4xx_rcc.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1. #
-#                    0\Project\Audio_playback_and_record\EWARM\MEDIA_IntFLASH #
-#                    \Obj\stm32f4xx_rtc.o D:\USR\Ilya\stm\STM32F4-Discovery_F #
-#                    W_V1.1.0\Project\Audio_playback_and_record\EWARM\MEDIA_I #
+#    Output file  =  C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Exe\ST #
+#                    M32F4-Discovery_Audio_IntFLASH.out                       #
+#    Map file     =  C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\List\S #
+#                    TM32F4-Discovery_Audio_IntFLASH.map                      #
+#    Command line =  C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\au #
+#                    dio_sample.o C:\Users\user\Documents\GitHub\real-time-co #
+#                    mputing-systems\Audio_playback_and_record\Utilities\STM3 #
+#                    2F4-Discovery\libPDMFilter_IAR.a                         #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\ma #
+#                    in.o C:\Users\user\Documents\GitHub\real-time-computing- #
+#                    systems\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\O #
+#                    bj\misc.o C:\Users\user\Documents\GitHub\real-time-compu #
+#                    ting-systems\Audio_playback_and_record\EWARM\MEDIA_IntFL #
+#                    ASH\Obj\startup_stm32f4xx.o                              #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
+#                    m32f4_discovery.o C:\Users\user\Documents\GitHub\real-ti #
+#                    me-computing-systems\Audio_playback_and_record\EWARM\MED #
+#                    IA_IntFLASH\Obj\stm32f4_discovery_audio_codec.o          #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
+#                    m32f4_discovery_lis302dl.o C:\Users\user\Documents\GitHu #
+#                    b\real-time-computing-systems\Audio_playback_and_record\ #
+#                    EWARM\MEDIA_IntFLASH\Obj\stm32f4xx_dac.o                 #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
+#                    m32f4xx_dma.o C:\Users\user\Documents\GitHub\real-time-c #
+#                    omputing-systems\Audio_playback_and_record\EWARM\MEDIA_I #
+#                    ntFLASH\Obj\stm32f4xx_exti.o                             #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
+#                    m32f4xx_gpio.o C:\Users\user\Documents\GitHub\real-time- #
+#                    computing-systems\Audio_playback_and_record\EWARM\MEDIA_ #
+#                    IntFLASH\Obj\stm32f4xx_i2c.o                             #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
+#                    m32f4xx_it.o C:\Users\user\Documents\GitHub\real-time-co #
+#                    mputing-systems\Audio_playback_and_record\EWARM\MEDIA_In #
+#                    tFLASH\Obj\stm32f4xx_pwr.o C:\Users\user\Documents\GitHu #
+#                    b\real-time-computing-systems\Audio_playback_and_record\ #
+#                    EWARM\MEDIA_IntFLASH\Obj\stm32f4xx_rcc.o                 #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
+#                    m32f4xx_rtc.o C:\Users\user\Documents\GitHub\real-time-c #
+#                    omputing-systems\Audio_playback_and_record\EWARM\MEDIA_I #
 #                    ntFLASH\Obj\stm32f4xx_spi.o                              #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\stm32f4xx #
-#                    _syscfg.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Pr #
-#                    oject\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj #
-#                    \stm32f4xx_tim.o D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1 #
-#                    .1.0\Project\Audio_playback_and_record\EWARM\MEDIA_IntFL #
-#                    ASH\Obj\system_stm32f4xx.o D:\USR\Ilya\stm\STM32F4-Disco #
-#                    very_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\M #
-#                    EDIA_IntFLASH\Obj\waveplayer.o --redirect                #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\st #
+#                    m32f4xx_syscfg.o C:\Users\user\Documents\GitHub\real-tim #
+#                    e-computing-systems\Audio_playback_and_record\EWARM\MEDI #
+#                    A_IntFLASH\Obj\stm32f4xx_tim.o                           #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj\sy #
+#                    stem_stm32f4xx.o C:\Users\user\Documents\GitHub\real-tim #
+#                    e-computing-systems\Audio_playback_and_record\EWARM\MEDI #
+#                    A_IntFLASH\Obj\waveplayer.o --redirect                   #
 #                    _Printf=_PrintfSmall --redirect _Scanf=_ScanfSmall -o    #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\Exe\STM32F4-D #
-#                    iscovery_Audio_IntFLASH.out --map                        #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\MEDIA_IntFLASH\List\STM32F4- #
-#                    Discovery_Audio_IntFLASH.map --config                    #
-#                    D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audi #
-#                    o_playback_and_record\EWARM\stm32f4xx_flash.icf          #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Exe\ST #
+#                    M32F4-Discovery_Audio_IntFLASH.out --map                 #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\List\S #
+#                    TM32F4-Discovery_Audio_IntFLASH.map --config             #
+#                    C:\Users\user\Documents\GitHub\real-time-computing-syste #
+#                    ms\Audio_playback_and_record\EWARM\stm32f4xx_flash.icf   #
 #                    --semihosting --entry __iar_program_start --vfe          #
 #                                                                             #
 #                                                                             #
@@ -271,7 +276,7 @@ Copy (__iar_copy_init3)
 
     Module                           ro code    ro data  rw data
     ------                           -------    -------  -------
-D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj: [1]
+C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj: [1]
     audio_sample.o                            1 003 384
     main.o                               292         20       20
     misc.o                               124
@@ -604,7 +609,7 @@ main                    0x080f6cc5    0x124  Code  Gb  main.o [1]
 volume                  0x200000ca      0x1  Data  Gb  waveplayer.o [1]
 
 
-[1] = D:\USR\Ilya\stm\STM32F4-Discovery_FW_V1.1.0\Project\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj
+[1] = C:\Users\user\Documents\GitHub\real-time-computing-systems\Audio_playback_and_record\EWARM\MEDIA_IntFLASH\Obj
 [2] = command line
 [3] = dl7M_tln.a
 [4] = m7M_tlv.a

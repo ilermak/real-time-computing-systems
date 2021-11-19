@@ -4,39 +4,42 @@
   <Desktop>
     <Static>
       <Debug-Log>
-        <ColumnWidth0>20</ColumnWidth0>
-        <ColumnWidth1>1541</ColumnWidth1>
-      </Debug-Log>
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1541</ColumnWidth1></Debug-Log>
       <Build>
-        <ColumnWidth0>20</ColumnWidth0>
-        <ColumnWidth1>1155</ColumnWidth1>
-        <ColumnWidth2>308</ColumnWidth2>
-        <ColumnWidth3>77</ColumnWidth3>
-      </Build>
+        
+        
+        
+        
+      <ColumnWidth0>20</ColumnWidth0><ColumnWidth1>1155</ColumnWidth1><ColumnWidth2>308</ColumnWidth2><ColumnWidth3>77</ColumnWidth3></Build>
       <Workspace>
         <ColumnWidths>
-          <Column0>124</Column0>
-          <Column1>27</Column1>
-          <Column2>27</Column2>
-          <Column3>27</Column3>
-        </ColumnWidths>
+          
+          
+          
+          
+        <Column0>124</Column0><Column1>27</Column1><Column2>27</Column2><Column3>27</Column3></ColumnWidths>
       </Workspace>
       <Disassembly>
         <col-names>
-          <item>Disassembly</item>
-          <item>_I0</item>
-        </col-names>
+          
+          
+        <item>Disassembly</item><item>_I0</item></col-names>
         <col-widths>
-          <item>500</item>
-          <item>20</item>
-        </col-widths>
+          
+          
+        <item>500</item><item>20</item></col-widths>
         <DisasmHistory/>
-        <ShowCodeCoverage>1</ShowCodeCoverage>
-        <ShowInstrProfiling>1</ShowInstrProfiling>
-      </Disassembly>
+        
+        
+      <ShowCodeCoverage>1</ShowCodeCoverage><ShowInstrProfiling>1</ShowInstrProfiling></Disassembly>
     </Static>
     <Windows>
-      <Wnd0>
+      
+      
+      
+    <Wnd0>
         <Tabs>
           <Tab>
             <Identity>TabID-17952-17180</Identity>
@@ -51,28 +54,20 @@
             <Session/>
           </Tab>
         </Tabs>
-        <SelectedTab>1</SelectedTab>
-      </Wnd0>
-      <Wnd1>
+        
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-28700-17183</Identity>
             <TabName>Workspace</TabName>
             <Factory>Workspace</Factory>
             <Session>
-              <NodeDict>
-                <ExpandedNode>Audio_playback_and_record</ExpandedNode>
-                <ExpandedNode>Audio_playback_and_record/EWARM</ExpandedNode>
-                <ExpandedNode>Audio_playback_and_record/STM32F4-Discovery</ExpandedNode>
-                <ExpandedNode>Audio_playback_and_record/STM32F4xx_StdPeriph_Driver</ExpandedNode>
-                <ExpandedNode>Audio_playback_and_record/User</ExpandedNode>
-              </NodeDict>
-            </Session>
+              
+            <NodeDict><ExpandedNode>Audio_playback_and_record</ExpandedNode><ExpandedNode>Audio_playback_and_record/EWARM</ExpandedNode><ExpandedNode>Audio_playback_and_record/STM32F4-Discovery</ExpandedNode><ExpandedNode>Audio_playback_and_record/STM32F4xx_StdPeriph_Driver</ExpandedNode><ExpandedNode>Audio_playback_and_record/User</ExpandedNode></NodeDict></Session>
           </Tab>
         </Tabs>
-        <SelectedTab>0</SelectedTab>
-      </Wnd1>
-      <Wnd2>
+        
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2>
         <Tabs>
           <Tab>
             <Identity>TabID-6681-17186</Identity>
@@ -81,140 +76,21 @@
             <Session/>
           </Tab>
         </Tabs>
-        <SelectedTab>0</SelectedTab>
-      </Wnd2>
-    </Windows>
+        
+      <SelectedTab>0</SelectedTab></Wnd2></Windows>
     <Editor>
-      <Pane>
-        <Tab>
-          <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\..\src\main.c</Filename>
-          <XPos>0</XPos>
-          <YPos>0</YPos>
-          <SelStart>0</SelStart>
-          <SelEnd>0</SelEnd>
-          <XPos2>0</XPos2>
-          <YPos2>36</YPos2>
-          <SelStart2>2019</SelStart2>
-          <SelEnd2>2019</SelEnd2>
-        </Tab>
-        <ActiveTab>0</ActiveTab>
-        <Tab>
-          <Factory>TextEditor</Factory>
-          <Filename>$WS_DIR$\..\src\waveplayer.c</Filename>
-          <XPos>0</XPos>
-          <YPos>0</YPos>
-          <SelStart>0</SelStart>
-          <SelEnd>0</SelEnd>
-          <XPos2>0</XPos2>
-          <YPos2>0</YPos2>
-          <SelStart2>0</SelStart2>
-          <SelEnd2>0</SelEnd2>
-        </Tab>
-      </Pane>
-      <ActivePane>0</ActivePane>
-      <Sizes>
-        <Pane>
-          <X>1000000</X>
-          <Y>1000000</Y>
-        </Pane>
-      </Sizes>
-      <SplitMode>1</SplitMode>
-    </Editor>
+      
+      
+      
+      
+    <Pane/><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
-      <Top>
-        <Row0>
-          <Sizes>
-            <Toolbar-04773ba0>
-              <key>iaridepm.enu1</key>
-            </Toolbar-04773ba0>
-          </Sizes>
-        </Row0>
-        <Row1>
-          <Sizes>
-            <Toolbar-04c57a90>
-              <key>debuggergui.enu1</key>
-            </Toolbar-04c57a90>
-          </Sizes>
-        </Row1>
-        <Row2>
-          <Sizes>
-            <Toolbar-04c58008>
-              <key>armstlink.enu1</key>
-            </Toolbar-04c58008>
-          </Sizes>
-        </Row2>
-      </Top>
-      <Left>
-        <Row0>
-          <Sizes>
-            <Wnd1>
-              <Rect>
-                <Top>-2</Top>
-                <Left>-2</Left>
-                <Bottom>826</Bottom>
-                <Right>198</Right>
-                <x>-2</x>
-                <y>-2</y>
-                <xscreen>200</xscreen>
-                <yscreen>200</yscreen>
-                <sizeHorzCX>125000</sizeHorzCX>
-                <sizeHorzCY>179051</sizeHorzCY>
-                <sizeVertCX>125000</sizeVertCX>
-                <sizeVertCY>741271</sizeVertCY>
-              </Rect>
-            </Wnd1>
-          </Sizes>
-        </Row0>
-      </Left>
-      <Right>
-        <Row0>
-          <Sizes>
-            <Wnd2>
-              <Rect>
-                <Top>-2</Top>
-                <Left>-2</Left>
-                <Bottom>826</Bottom>
-                <Right>198</Right>
-                <x>-2</x>
-                <y>-2</y>
-                <xscreen>200</xscreen>
-                <yscreen>200</yscreen>
-                <sizeHorzCX>125000</sizeHorzCX>
-                <sizeHorzCY>179051</sizeHorzCY>
-                <sizeVertCX>125000</sizeVertCX>
-                <sizeVertCY>741271</sizeVertCY>
-              </Rect>
-            </Wnd2>
-          </Sizes>
-        </Row0>
-      </Right>
-      <Bottom>
-        <Row0>
-          <Sizes>
-            <Wnd0>
-              <Rect>
-                <Top>-2</Top>
-                <Left>-2</Left>
-                <Bottom>198</Bottom>
-                <Right>1602</Right>
-                <x>-2</x>
-                <y>-2</y>
-                <xscreen>1604</xscreen>
-                <yscreen>200</yscreen>
-                <sizeHorzCX>1002500</sizeHorzCX>
-                <sizeHorzCY>179051</sizeHorzCY>
-                <sizeVertCX>125000</sizeVertCX>
-                <sizeVertCY>179051</sizeVertCY>
-              </Rect>
-            </Wnd0>
-          </Sizes>
-        </Row0>
-      </Bottom>
-      <Float>
-        <Sizes/>
-      </Float>
-    </Positions>
+      
+      
+      
+      
+      
+    <Top><Row0><Sizes><Toolbar-04a53df0><key>iaridepm.enu1</key></Toolbar-04a53df0></Sizes></Row0><Row1><Sizes><Toolbar-108118c8><key>debuggergui.enu1</key></Toolbar-108118c8></Sizes></Row1><Row2><Sizes><Toolbar-10811a58><key>armstlink.enu1</key></Toolbar-10811a58></Sizes></Row2></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>826</Bottom><Right>198</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>125000</sizeHorzCX><sizeHorzCY>179051</sizeHorzCY><sizeVertCX>125000</sizeVertCX><sizeVertCY>741271</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>826</Bottom><Right>198</Right><x>-2</x><y>-2</y><xscreen>200</xscreen><yscreen>200</yscreen><sizeHorzCX>125000</sizeHorzCX><sizeHorzCY>179051</sizeHorzCY><sizeVertCX>125000</sizeVertCX><sizeVertCY>741271</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>198</Bottom><Right>1602</Right><x>-2</x><y>-2</y><xscreen>1604</xscreen><yscreen>200</yscreen><sizeHorzCX>1002500</sizeHorzCX><sizeHorzCY>179051</sizeHorzCY><sizeVertCX>125000</sizeVertCX><sizeVertCY>179051</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Project>
 
