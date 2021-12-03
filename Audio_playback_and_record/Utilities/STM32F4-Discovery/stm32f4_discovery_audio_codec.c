@@ -362,7 +362,7 @@ uint32_t EVAL_AUDIO_Play(uint16_t* pBuffer, uint32_t Size)
   Audio_MAL_Play((uint32_t)pBuffer, (uint32_t)(DMA_MAX(Size/4)));
   
   /* Update the remaining number of data to be played */
-  AudioRemSize = (Size/2) - DMA_MAX(AudioTotalSize);
+  AudioRemSize = 0; //(Size/2) - DMA_MAX(AudioTotalSize);
   
   /* Update the current audio pointer position */
   CurrentPos = pBuffer + DMA_MAX(AudioTotalSize);
