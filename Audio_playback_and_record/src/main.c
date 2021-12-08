@@ -47,7 +47,7 @@ static void TIM_LED_Config(void);
   * @param  None
   * @retval None
 */
-int main(void)
+  int main(void)
 { 
   /* Initialize LEDS */
   STM_EVAL_LEDInit(LED3);
@@ -71,7 +71,7 @@ int main(void)
   
 #if defined MEDIA_IntFLASH
   
-  WavePlayBack(I2S_AudioFreq_48k); 
+  WavePlayBack(I2S_AudioFreq_8k); 
   while (1);
   
 #elif defined MEDIA_USB_KEY
