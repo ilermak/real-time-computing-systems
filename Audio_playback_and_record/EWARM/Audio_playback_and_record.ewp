@@ -993,7 +993,7 @@
                 </option>
                 <option>
                     <name>IlinkTrustzoneImportLibraryOut</name>
-                    <state>###Unitialized###</state>
+                    <state>Audio_playback_and_record_import_lib.o</state>
                 </option>
                 <option>
                     <name>OILinkExtraOption</name>
@@ -2262,12 +2262,6 @@
     <group>
         <name>User</name>
         <file>
-            <name>$PROJ_DIR$\..\src\audio_sample.c</name>
-            <excluded>
-                <configuration>MEDIA_USB_KEY</configuration>
-            </excluded>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\src\main.c</name>
         </file>
         <file>
@@ -2277,25 +2271,7 @@
             <name>$PROJ_DIR$\..\src\system_stm32f4xx.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\src\usb_bsp.c</name>
-            <excluded>
-                <configuration>MEDIA_IntFLASH</configuration>
-            </excluded>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\src\usbh_usr.c</name>
-            <excluded>
-                <configuration>MEDIA_IntFLASH</configuration>
-            </excluded>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\src\waveplayer.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\src\waverecorder.c</name>
-            <excluded>
-                <configuration>MEDIA_IntFLASH</configuration>
-            </excluded>
         </file>
     </group>
 </project>

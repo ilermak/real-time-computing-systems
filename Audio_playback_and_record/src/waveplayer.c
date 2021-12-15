@@ -1,24 +1,3 @@
-/**
-  ******************************************************************************
-  * @file    Audio_playback_and_record/src/waveplayer.c 
-  * @author  MCD Application Team
-  * @version V1.0.0
-  * @date    28-October-2011
-  * @brief   I2S audio program 
-  ******************************************************************************
-  * @attention
-  *
-  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
-  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
-  * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
-  * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
-  * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
-  * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
-  *
-  * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
-  ******************************************************************************
-  */
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include <stdio.h>
@@ -26,20 +5,12 @@
 #include <string.h>
 #include <math.h>
 
-/** @addtogroup STM32F4-Discovery_Audio_Player_Recorder
-* @{
-*/ 
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
 #if defined MEDIA_IntFLASH
  /* This is an audio file stored in the Flash memory as a constant table of 16-bit data.
     The audio format should be WAV (raw / PCM) 16-bits, Stereo (sampling rate may be modified) */
-extern uint16_t AUDIO_SAMPLE[];
-/* Audio file size and start address are defined here since the audio file is 
-    stored in Flash memory as a constant table of 16-bit data */
-#define AUDIO_FILE_SZE          1000
-#define AUIDO_START_ADDRESS     0 /* Offset relative to audio file header size */
 #endif
 
 /* Private macro -------------------------------------------------------------*/
@@ -86,15 +57,10 @@ static void EXTILine_Config(void);
 
 /* Private functions ---------------------------------------------------------*/
 
-
- 
-//#define LEN 47912
-//uint16_t buf[LEN];
-
-/////////////////
-uint16_t n = 100;
+uint16_t n = 200;
 uint16_t *sinGen(int32_t samplerate, int32_t wave_frequency, int32_t *buffer_length) {
-    int32_t period = samplerate / wave_frequency; 
+    int32_t period = samplerate / wave_frequency;
+    
     double pi = 3.1415926535; 
     double val;
     long L_val;
@@ -102,16 +68,11 @@ uint16_t *sinGen(int32_t samplerate, int32_t wave_frequency, int32_t *buffer_len
     static uint16_t *buffer = 0;
     if (buffer == 0){
         buffer = (uint16_t *)malloc(sizeof(uint16_t) * period * 2);
-    }
+    } 
+
     if (buffer == 0) {
       return 0;
     }
-    
-//    static uint16_t *buffer;
-//    
-//    buffer = (uint16_t *)malloc(sizeof(uint16_t) * period * 2);
-    
-    
   
     for(int a = 0;a < period; a++) 
     {
@@ -119,39 +80,30 @@ uint16_t *sinGen(int32_t samplerate, int32_t wave_frequency, int32_t *buffer_len
         L_val= (long) (0x7FFFFFFF * val);   
         buffer[2 * a] = (uint16_t) (L_val >> 16); 
         buffer[2 * a + 1] = (uint16_t) (L_val >> 16);
-        //printf("0x%04X, 0x%04X, \n", buffer[2 * a], buffer[2 * a + 1]);
-    }
-    *buffer_length = period * 2;
-    //printf("\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\n");
-    for (int i = 0; i < *buffer_length; i++){
-      //printf("0x%04X, \n", buffer[i]);
     }
     
-//    static uint16_t *buffer2 = 0;
-//    buffer2 = (uint16_t *)malloc(sizeof(uint16_t) * period * 2 * n);
-//    
-    static uint16_t *buffer2 = 0;
-    if (buffer2 == 0){
-        buffer2 = (uint16_t *)malloc(sizeof(uint16_t) * period * 2 * n);
-    }
-    if (buffer2 == 0) {
+    *buffer_length = period * 2;
+
+    static uint16_t *final_buffer = 0;
+    if (final_buffer == 0){
+        final_buffer = (uint16_t *)malloc(sizeof(uint16_t) * period * 2 * n);
+    } 
+
+    if (final_buffer == 0) {;
       return 0;
     }
     
     for (int i = 0; i < n; i++){
-      memcpy(buffer2 + *buffer_length * i,buffer, *buffer_length * 2);
+      memcpy(final_buffer + *buffer_length * i,buffer, *buffer_length * 2);
     }
-    return buffer2;
+    return final_buffer;
 }
 
-/////////////////
-
 uint16_t samplerate = 8000; 
-uint16_t wave_frequency = 600;
-
+uint16_t wave_frequency = 425;
+uint16_t wave_frequency_counter = 0;
 uint16_t *pbuffer;
 int32_t len;
-
 int i;
 
 /**
@@ -186,22 +138,12 @@ void WavePlayBack(uint32_t AudioFreq)
   
   /* Initialize wave player (Codec, DMA, I2C) */
   WavePlayerInit(AudioFreq);
-  
-  //buf = (uint16_t *) malloc(100 * sizeof(uint16_t));
-  //memcpy(buf, AS, 2 * LEN);
-  
-  
-  //wave_frequency += 100;
+
   pbuffer = sinGen(samplerate, wave_frequency, &len);
-  
-  
-  
-//  for (i = 0; i < 100; i++){
-//    printf("%x\n", buf[i]);
-//  }
   
   /* Play on */
   AudioFlashPlay((uint16_t*)(pbuffer), 2*len * n, 0);
+
   
   /* LED Blue Start toggling */
   LED_Toggle = 6;
@@ -429,15 +371,18 @@ void EVAL_AUDIO_TransferComplete_CallBack(uint32_t pBuffer, uint32_t Size)
   EVAL_AUDIO_Stop(CODEC_PDWN_HW);
 #else
   /* Replay from the beginning */
-  //AudioFlashPlay((uint16_t*)(AUDIO_SAMPLE + AUIDO_START_ADDRESS),AUDIO_FILE_SZE,AUIDO_START_ADDRESS);
-   //AudioFlashPlay(buf, 2 * LEN, 0);
-  if (wave_frequency < 4000){
-  
-    wave_frequency += 5;
-  } else {
-    wave_frequency = 200;
-  }
-  pbuffer = sinGen(samplerate, wave_frequency, &len);
+  wave_frequency_counter++;
+
+  if (wave_frequency_counter % 20 == 0){
+    if (wave_frequency < 4000) {
+      wave_frequency += 20;
+      pbuffer = sinGen(samplerate, wave_frequency, &len);
+    }
+    else {
+      wave_frequency = 400;
+      pbuffer = sinGen(samplerate, wave_frequency, &len);
+    }
+  } 
   AudioFlashPlay(pbuffer, 2*len * n, 0);
 #endif  
   
@@ -896,9 +841,4 @@ void assert_failed(uint8_t* file, uint32_t line)
 }
 #endif
 
-/**
-* @}
-*/ 
 
-
-/******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/

@@ -2959,9 +2959,6 @@
     <group>
         <name>User</name>
         <file>
-            <name>$PROJ_DIR$\..\src\audio_sample.c</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\src\main.c</name>
         </file>
         <file>
@@ -2971,16 +2968,7 @@
             <name>$PROJ_DIR$\..\src\system_stm32f4xx.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\src\usb_bsp.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\src\usbh_usr.c</name>
-        </file>
-        <file>
             <name>$PROJ_DIR$\..\src\waveplayer.c</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\src\waverecorder.c</name>
         </file>
     </group>
 </project>

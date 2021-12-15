@@ -1,33 +1,6 @@
-/**
-  ******************************************************************************
-  * @file    Audio_playback_and_record/src/stm32f4xx_it.c 
-  * @author  MCD Application Team
-  * @version V1.0.0
-  * @date    28-October-2011
-  * @brief   Main Interrupt Service Routines.
-  *          This file provides template for all exceptions handler and 
-  *          peripherals interrupt service routine.
-  ******************************************************************************
-  * @attention
-  *
-  * THE PRESENT FIRMWARE WHICH IS FOR GUIDANCE ONLY AIMS AT PROVIDING CUSTOMERS
-  * WITH CODING INFORMATION REGARDING THEIR PRODUCTS IN ORDER FOR THEM TO SAVE
-  * TIME. AS A RESULT, STMICROELECTRONICS SHALL NOT BE HELD LIABLE FOR ANY
-  * DIRECT, INDIRECT OR CONSEQUENTIAL DAMAGES WITH RESPECT TO ANY CLAIMS ARISING
-  * FROM THE CONTENT OF SUCH FIRMWARE AND/OR THE USE MADE BY CUSTOMERS OF THE
-  * CODING INFORMATION CONTAINED HEREIN IN CONNECTION WITH THEIR PRODUCTS.
-  *
-  * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
-  ******************************************************************************
-  */ 
-
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
-
-/** @addtogroup STM32F4-Discovery_Audio_Player_Recorder
-  * @{
-  */
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -315,13 +288,6 @@ void OTG_FS_IRQHandler(void)
   * @param  None
   * @retval None
   */
-/*void PPP_IRQHandler(void)
-{
-}*/
 
 
-/**
-  * @}
-  */ 
-  
-/******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/
+
